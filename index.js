@@ -30,6 +30,13 @@ inquirer
     }
 ])
 .then((userInput) => {
-    console.log(userInput);
-
+    //console.log(userInput);
+    
+    // fs.writeFile("index.html", userInput, (err) => 
+    //     err ? console.error(err): console.log('Success!')
+    // )
+    for (var userResponse in userInput){
+    console.log(`${userInput[userResponse]}`);
+    }
 });
+
